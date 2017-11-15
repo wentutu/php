@@ -1,0 +1,7 @@
+0 #正确
+1 #上传大小超过了input[type=file]大小
+4 #没有上传任何文件
+post 限制（php.ini）
+post_max_size = 8M
+upload限制（php.ini）
+upload_max_filesize = 3M

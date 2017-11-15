@@ -1,0 +1,15 @@
+<?php 
+//设置cookie值 （第一次设置cookie不能获取到cookie 必须访问一次服务器才能获取到）
+ setcookie('username','user1',time()+3600,'/');
+ //设置会话cookie
+ setcookie('username','user1',0,'/');
+ //删除cookie
+ setcookie('username','user1',time()-1,'/');
+ //清空cookie
+
+ setcookie('password','123',time()+3600,'/');
+ setcookie('user_id','1',time()+3600,'/');
+  echo "<pre>";
+ print_r($_COOKIE);
+ echo "</pre>";
+ ?>

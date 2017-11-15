@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+ update user set passworld='456' where id=2;
+&&,||,and ,or
++,-,*,/,%
+1 sql条件
+1)不改变自增顺序
+1增
+1增
+1）数字运算符
+1，增
+2 删
+2)逻辑运算符
+2)重置自增
+2删
+2，删
+3)比较运算符
+3，改
+=,!=,>=,<=,>,<,<>
+alter  table t1 name username vachar(50) not null;
+alter table t1 add index idx_name(name);
+alter table t1 add sex tinyint not null after name;
+alter table t1 add sex tinyint not null frist 
+alter table t1 add sex tinyint not null;
+alter table t1 add unique uni_name(name);
+alter table t1 drop index index_name(name);
+alter table t1 drop index index_name(name);
+alter table t1 drop primary;
+alter table t1 drop sex ;
+alter table t1 modify id int unsigned not null;
+delete from user where id=4;
+desc select * from t1 where id=4\G
+insert into user(username,passworld) values ('user1','123');
+select * from user where  id=2;
+truncate user;#清空表数据
+主键索引
+修改数据表字段
+删(delete)
+删(先删除自增再删除索引)
+可以有效的屏蔽关键字 
+唯一索引（列里面不出现重复值）
+增(insert）
+把表打印结果以行打印
+提高检索速度
+改(update)
+数据表操作（不加条件作用于全部数据）
+普通索引
+查(select)
+ distinct关键字(去重)
+
+索引作用 
+表名反引号的作用：`table`

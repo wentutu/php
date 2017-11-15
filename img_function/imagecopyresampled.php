@@ -1,0 +1,19 @@
+<?php 
+ //图片缩放
+//源图象连接资源。
+$filename = 'cs.jpg';
+$src_image=imagecreatefromjpeg($filename);
+//目标图象连接资源。
+$dst_image=imagecreatetruecolor(200,200);
+$dst_x=0; 
+$dst_y=0;
+$src_x=0;
+$src_y=0;
+$dst_w=200;
+$dst_h-200;
+$src_w=1200;
+$src_h=750;
+imagecopyresampled($dst_image,$src_image,$dst_x,$dst_y,$src_x,$src_,$dst_w,$dst_h,$src_w,$src_h);
+header('content-type:image/jpeg');
+imagejpeg($dst_image);
+ ?>
